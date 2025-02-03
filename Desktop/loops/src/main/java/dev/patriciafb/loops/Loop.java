@@ -19,4 +19,11 @@ public class Loop {
         }
         return result;
     }
+
+    public static void printMultiplicacionTabla(int n) {
+        List<String> tabla = multiplicacionTabla(n);
+        for (String line : tabla) {
+            System.out.println(line);
+        }
+    }
 }
