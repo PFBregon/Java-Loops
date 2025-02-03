@@ -9,6 +9,8 @@ public final class App {
         int n = scanner.nextInt();
         scanner.close();
 
-       Loop.Multiplicar(n);
+       for (String linea : Loop.multiplicacionTabla(n)) {
+            System.out.println(linea);
+        }
     }
 }

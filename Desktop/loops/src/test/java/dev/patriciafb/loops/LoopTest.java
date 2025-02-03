@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class LoopTest {
-
-    public void TestMultiplicacion() {
+    @Test
+    public void TestMultiplicar() {
         int n = 5;
-        List<String> result = Loop.Multiplicar(n);
+        List<String> result = Loop.multiplicacionTabla(n);
         assertEquals(10, result.size());
     }
 }
