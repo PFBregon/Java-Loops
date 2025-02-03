@@ -1,17 +1,14 @@
 package dev.patriciafb.loops;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import java.util.Scanner;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public final class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese un número: ");
+        int n = scanner.nextInt();
+        scanner.close();
+
+       Loop.Multiplicar(n);
     }
 }
